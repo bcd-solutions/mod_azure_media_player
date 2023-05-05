@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+  <name>Azure Media Player</name>
+  <author>BCD Solutions</author>
+  <creationDate>2023-05-04</creationDate>
+  <copyright>Copyright (C) 2023 BCD Solutions. All Rights Reserved.</copyright>
+  <license>GNU/GPLv3 https://www.gnu.org/licenses/gpl-3.0.html</license>
+  <authorEmail>info@bcd.solutions</authorEmail>
+  <authorUrl>https://bcd.solutions</authorUrl>
+  <version>1.0</version>
+  <updateservers>
+    <server type="extension" priority="2" name="Azure Media Player">https://bcd.solutions/downloads/update.xml</server>
+ </updateservers>
+  <description>This is a very simple module that allows users to display Azure Media Services Live and On-Demand Streaming on their Joomla website.</description>
+  <files>
+    <filename module="mod_azure_media_player">mod_azure_media_player.php</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="source" type="text" label="Video Source URL" description="Enter the URL of the video you want to display." default="" />
+        <field name="width" type="text" label="Video Player Width %" description="Enter the width of the video player." default="100" />
+        <field name="align" type="list" label="Video Player Alignment" description="Enter the alignment of the video player." default="">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
